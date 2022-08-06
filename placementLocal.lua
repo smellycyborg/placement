@@ -53,7 +53,7 @@ UIS.InputBegan:Connect(function(Input)
 end)
 
 RunService.RenderStepped:Connect(function() -- for placing
-	if placing == true then
+	if placing then
 		PlaceBlock.Parent = workspace -- putting parent for placement block
 		if mouse.Target ~= nil then
 			if mouse.Target.Name == "Block" then
